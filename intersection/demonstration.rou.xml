@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="type_passenger" vClass="passenger" guiShape="passenger" accel="3"   decel="9"   length="4"   minGap="1" maxSpeed="70" color="white"/>
+	<vType id="type_bus"       vClass="bus"       guiShape="bus"       accel="1.8" decel="1.8" length="12"  minGap="1" maxSpeed="50" laneChangeModel="SL2015" lcPushy="0"/>
+	<vType id="type_delivery"  vClass="delivery"  guiShape="delivery"  accel="2.3" decel="4"   length="4.2" minGap="1" maxSpeed="60" color="blue"/>
+	<vType id="type_moped"     vClass="moped"     guiShape="moped"     accel="2.8" decel="7"   length="1.8" minGap="1" maxSpeed="60" laneChangeModel="SL2015" latAlignment="compact" lcPushy="0.5"/>
+	<vType id="type_pedestrian"	vClass="pedestrian"	guiShape="pedestrian"	impatience="0.5"		color="red"/>
+	
+	<flow id="flow_0" type="type_moped"		begin="0" end="1800" vehsPerHour="375"	from="BM1" to="BM7" departLane="free" departSpeed="10"/>
+	<flow id="flow_1" type="type_passenger" begin="0" end="1800" vehsPerHour="294"	from="BM1" to="BM7" departLane="free" departSpeed="10"/>
+	<flow id="flow_2" type="type_delivery"	begin="0" end="1800" vehsPerHour="17"	from="BM1" to="BM7" departLane="free" departSpeed="10"/>
+	<flow id="flow_3" type="type_bus"		begin="0" end="1800" vehsPerHour="7"	from="BM1" to="BM7" departLane="free" departSpeed="10"/>
+	
+	<flow id="flow_passenger_A" type="type_passenger" begin="0" end="1800" vehsPerHour="373" from="-BM1" to="-CK4"	departLane="free" departSpeed="10"/>
+	<flow id="flow_passenger_B" type="type_passenger" begin="0" end="1800" vehsPerHour="246" from="-BM1" to="-ZS3"	departLane="free" departSpeed="10"/>
+	<flow id="flow_passenger_C" type="type_passenger" begin="0" end="1800" vehsPerHour="433" from="-BM1" to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_passenger_G" type="type_passenger" begin="0" end="1800" vehsPerHour="77"  from="CK1"	 to="-ZS3"	departLane="free" departSpeed="10"/>
+	<flow id="flow_passenger_H" type="type_passenger" begin="0" end="1800" vehsPerHour="135" from="CK1"	 to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_passenger_I" type="type_passenger" begin="0" end="1800" vehsPerHour="261" from="CK1"	 to="BM7"	departLane="free" departSpeed="10"/>
+	<flow id="flow_passenger_J" type="type_passenger" begin="0" end="1800" vehsPerHour="65"  from="ZS1"	 to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_passenger_K" type="type_passenger" begin="0" end="1800" vehsPerHour="127" from="ZS1"	 to="BM7"	departLane="free" departSpeed="10"/>
+	<flow id="flow_passenger_N" type="type_passenger" begin="0" end="1800" vehsPerHour="130" from="BM1"	 to="-CK4"	departLane="free" departSpeed="10"/>
+	
+	<flow id="flow_delivery_A" type="type_delivery" begin="0" end="1800" vehsPerHour="22"	 from="-BM1" to="-CK4"	departLane="free" departSpeed="10"/>
+	<flow id="flow_delivery_B" type="type_delivery" begin="0" end="1800" vehsPerHour="14"	 from="-BM1" to="-ZS3"	departLane="free" departSpeed="10"/>
+	<flow id="flow_delivery_C" type="type_delivery" begin="0" end="1800" vehsPerHour="25"	 from="-BM1" to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_delivery_G" type="type_delivery" begin="0" end="1800" vehsPerHour="4"	 from="CK1"	 to="-ZS3"	departLane="free" departSpeed="10"/>
+	<flow id="flow_delivery_H" type="type_delivery" begin="0" end="1800" vehsPerHour="8"	 from="CK1"	 to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_delivery_I" type="type_delivery" begin="0" end="1800" vehsPerHour="16"	 from="CK1"	 to="BM7"	departLane="free" departSpeed="10"/>
+	<flow id="flow_delivery_J" type="type_delivery" begin="0" end="1800" vehsPerHour="4"	 from="ZS1"	 to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_delivery_K" type="type_delivery" begin="0" end="1800" vehsPerHour="7"	 from="ZS1"	 to="BM7"	departLane="free" departSpeed="10"/>
+	<flow id="flow_delivery_N" type="type_delivery" begin="0" end="1800" vehsPerHour="7"	 from="BM1"	 to="-CK4"	departLane="free" departSpeed="10"/>
+	
+	<flow id="flow_bus_A" type="type_bus" begin="0" end="1800" vehsPerHour="6" from="ZS1"  to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_bus_B" type="type_bus" begin="0" end="1800" vehsPerHour="4" from="ZS1"  to="BM7"		departLane="free" departSpeed="10"/>
+	<flow id="flow_bus_C" type="type_bus" begin="0" end="1800" vehsPerHour="3" from="-BM1" to="-CK4"	departLane="free" departSpeed="10"/>
+	<flow id="flow_bus_D" type="type_bus" begin="0" end="1800" vehsPerHour="7" from="-BM1" to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_bus_E" type="type_bus" begin="0" end="1800" vehsPerHour="5" from="-BM1" to="-ZS3"	departLane="free" departSpeed="10"/>
+	<flow id="flow_bus_F" type="type_bus" begin="0" end="1800" vehsPerHour="7" from="BM1"  to="-CK4"	departLane="free" departSpeed="10"/>
+	<flow id="flow_bus_G" type="type_bus" begin="0" end="1800" vehsPerHour="4" from="CK1"  to="-ZS3"	departLane="free" departSpeed="10"/>
+	<flow id="flow_bus_H" type="type_bus" begin="0" end="1800" vehsPerHour="3" from="CK1"  to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_bus_I" type="type_bus" begin="0" end="1800" vehsPerHour="5" from="CK1"  to="BM7"		departLane="free" departSpeed="10"/>
+	
+	<flow id="flow_moped_A" type="type_moped" begin="0" end="1800" vehsPerHour="476"		 from="-BM1" to="-CK4"	departLane="free" departSpeed="10"/>
+	<flow id="flow_moped_B" type="type_moped" begin="0" end="1800" vehsPerHour="314"		 from="-BM1" to="-ZS3"	departLane="free" departSpeed="10"/>
+	<flow id="flow_moped_C" type="type_moped" begin="0" end="1800" vehsPerHour="559"		 from="-BM1" to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_moped_G" type="type_moped" begin="0" end="1800" vehsPerHour="98"		     from="CK1"	 to="-ZS3"	departLane="free" departSpeed="10"/>
+	<flow id="flow_moped_H" type="type_moped" begin="0" end="1800" vehsPerHour="166"		 from="CK1"  to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_moped_I" type="type_moped" begin="0" end="1800" vehsPerHour="333"		 from="CK1"  to="BM7"	departLane="free" departSpeed="10"/>
+	<flow id="flow_moped_J" type="type_moped" begin="0" end="1800" vehsPerHour="84"		     from="ZS1"  to="-BM6"	departLane="free" departSpeed="10"/>
+	<flow id="flow_moped_K" type="type_moped" begin="0" end="1800" vehsPerHour="162"		 from="ZS1"	 to="BM7"	departLane="free" departSpeed="10"/>
+	<flow id="flow_moped_N" type="type_moped" begin="0" end="1800" vehsPerHour="166"		 from="BM1"	 to="-CK4"	departLane="free" departSpeed="10"/>
+	
+	<personFlow id="flow_pedestrian_A+" type="type_pedestrian"	begin="0" end="1800" personsPerHour="275">	<walk from="-CK2" to="CK3"/> </personFlow>
+	<personFlow id="flow_pedestrian_A-" type="type_pedestrian"	begin="0" end="1800" personsPerHour="275">	<walk from="CK3" to="-CK2"/> </personFlow>
+	<personFlow id="flow_pedestrian_B+" type="type_pedestrian"	begin="0" end="1800" personsPerHour="280">	<walk from="-ZS2" to="ZS2"/> </personFlow>
+	<personFlow id="flow_pedestrian_B-" type="type_pedestrian"	begin="0" end="1800" personsPerHour="280">	<walk from="ZS2" to="-ZS2"/> </personFlow>
+	
+</routes>

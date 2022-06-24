@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+
+    <input>
+        <net-file value="demonstration.net.xml"/>
+        <route-files value="demonstration.rou.xml"/>
+		<additional-files value="demonstration.add.xml"/>
+    </input>
+	<processing>
+		<pedestrian.striping.stripe-width value="0.25"/>
+		
+		<lateral-resolution value="0.8"/>
+	</processing>
+</configuration>

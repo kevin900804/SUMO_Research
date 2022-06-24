@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2022-06-01 21:30:20 by Eclipse SUMO netedit Version 1.12.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\kevin\OneDrive\桌面\SUMO\term%20project(OK)\intersection\demonstration.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\kevin\OneDrive\桌面\SUMO\term%20project(OK)\intersection\demonstration.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="C:\Users\kevin\OneDrive\桌面\SUMO\term%20project(OK)\intersection\demonstration.add.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <e2Detector id="e2_0" lane="CK3_1" 	pos="95.00"  length="20.00" freq="300.00" file="CK.xml"/>
+    <e2Detector id="e2_1" lane="CK3_2" 	pos="95.00"  length="20.00" freq="300.00" file="CK.xml"/>
+    <e2Detector id="e2_2" lane="CK3_3" 	pos="95.00"  length="20.00" freq="300.00" file="CK.xml"/>
+    <e2Detector id="e2_3" lane="-CK2_3" pos="10.00"  length="20.00" freq="300.00" file="-CK.xml"/>
+    <e2Detector id="e2_4" lane="-CK2_2" pos="10.00"  length="20.00" freq="300.00" file="-CK.xml"/>
+    <e2Detector id="e2_5" lane="-CK2_1" pos="10.00"  length="20.00" freq="300.00" file="-CK.xml"/>
+    <e2Detector id="e2_6" lane="-BM2_1" pos="130.00" length="20.00" freq="300.00" file="-BM.xml"/>
+    <e2Detector id="e2_7" lane="-BM2_2" pos="130.00" length="20.00" freq="300.00" file="-BM.xml"/>
+    <e2Detector id="e2_8" lane="BM6_2" 	pos="10.00"  length="20.00" freq="300.00" file="BM.xml"/>
+    <e2Detector id="e2_9" lane="BM6_1" 	pos="10.00"  length="20.00" freq="300.00" file="BM.xml"/>
+</additional>
